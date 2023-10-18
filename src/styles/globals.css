@@ -27,9 +27,3 @@ html {
 .text-clamp-40 {
   font-size: clamp(2rem, 3vw, 40px);
 }
-
-.cut-off {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}

@@ -79,7 +79,7 @@ export default function Home() {
         />
       </Head>
       <div
-        className="custom-cursor cut-off my-10 flex h-screen flex-col items-center justify-center gap-[40rem] text-yellow-300"
+        className="custom-cursor cut-off my-10 flex h-screen flex-col items-center justify-center text-yellow-300 lg:gap-[40rem]"
         style={{
           backgroundImage: 'url("/F8XYMwCaEAAzRbb.jpeg")',
           backgroundSize: "contain",
@@ -87,50 +87,52 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="cut-off flex items-center justify-center overflow-hidden text-[60px] uppercase">
-            Days since SSSniperWolf doxxed Jacksfilms
-          </h1>
-          <h2 className="cut-off flex flex-row items-center text-[50px] uppercase">
-            and she still has a monetized{" "}
-            <span>
-              <img
-                alt="YouTube"
-                className="h-20"
-                src="/icons8-youtube-480.png"
-              ></img>
-            </span>
-            channel
-          </h2>
-        </div>
+        <div className="flex w-3/4 flex-col gap-[12rem]">
+          <div className="flex flex-col items-center justify-center">
+            <h1 className="flex flex-wrap text-4xl uppercase lg:text-[60px]">
+              Days since SSSniperWolf doxxed Jacksfilms
+            </h1>
+            <h2 className="hidden flex-row items-center text-2xl uppercase md:flex lg:text-[50px]">
+              and she still has a monetized
+              <span>
+                <img
+                  alt="YouTube"
+                  className="w-auto md:w-16"
+                  src="/icons8-youtube-480.png"
+                ></img>
+              </span>
+              channel
+            </h2>
+          </div>
 
-        <div>
-          <h3 className="grid h-full grid-cols-4 gap-4 text-3xl uppercase">
-            <div className="flex w-[130px] flex-col items-center space-y-10">
-              <span className="text-ellipsis text-[120px]">
-                {timeSince.days}
-              </span>
-              <div className="cut-off text-red-600">Days</div>
-            </div>
-            <div className="flex w-[130px] flex-col items-center space-y-10">
-              <span className="text-ellipsis text-[120px]">
-                {timeSince.hours}
-              </span>
-              <div className="cut-off text-red-600">Hours</div>
-            </div>
-            <div className="flex w-[130px] flex-col items-center space-y-10">
-              <span className="text-ellipsis text-[120px]">
-                {timeSince.minutes}
-              </span>
-              <div className="cut-off text-red-600">Minutes</div>
-            </div>
-            <div className="flex w-[130px] flex-col items-center space-y-10">
-              <span className="text-ellipsis text-[120px]">
-                {timeSince.seconds}
-              </span>
-              <div className="cut-off text-red-600">Seconds</div>
-            </div>
-          </h3>
+          <div className="flex w-full flex-col items-center justify-center align-middle">
+            <h3 className="grid h-full grid-cols-4 items-center gap-4 text-3xl uppercase lg:gap-8">
+              <div className="flex w-full flex-col items-center space-y-10">
+                <span className="text-ellipsis text-5xl lg:text-[120px]">
+                  {timeSince.days}
+                </span>
+                <div className="text-lg text-red-600 lg:text-3xl">Days</div>
+              </div>
+              <div className="flex w-full flex-col items-center space-y-10">
+                <span className="text-ellipsis text-5xl lg:text-[120px]">
+                  {timeSince.hours}
+                </span>
+                <div className="text-lg text-red-600 lg:text-3xl">Hours</div>
+              </div>
+              <div className="flex w-full flex-col items-center space-y-10">
+                <span className="text-ellipsis text-5xl lg:text-[120px]">
+                  {timeSince.minutes}
+                </span>
+                <div className="text-lg text-red-600 lg:text-3xl">Minutes</div>
+              </div>
+              <div className="flex w-full flex-col items-center space-y-10">
+                <span className="text-ellipsis text-5xl lg:text-[120px]">
+                  {timeSince.seconds}
+                </span>
+                <div className="text-lg text-red-600 lg:text-3xl">Seconds</div>
+              </div>
+            </h3>
+          </div>
         </div>
       </div>
     </>
