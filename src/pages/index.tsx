@@ -79,7 +79,7 @@ export default function Home() {
         />
       </Head>
       <div
-        className="custom-cursor cut-off my-10 flex h-screen flex-col items-center justify-center text-yellow-300 lg:gap-[40rem]"
+        className="custom-cursor my-10 flex h-screen flex-col items-center justify-center text-yellow-300 lg:gap-[45rem]"
         style={{
           backgroundImage: 'url("/F8XYMwCaEAAzRbb.jpeg")',
           backgroundSize: "contain",
@@ -87,12 +87,18 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="flex w-3/4 flex-col gap-[12rem]">
+        <div className="flex w-3/4 flex-col gap-[24rem]">
           <div className="flex flex-col items-center justify-center">
-            <h1 className="flex flex-wrap text-4xl uppercase lg:text-[60px]">
+            <h1
+              className="flex flex-wrap uppercase"
+              style={{ fontSize: "calc(3vw + 1em)" }}
+            >
               Days since SSSniperWolf doxxed Jacksfilms
             </h1>
-            <h2 className="hidden flex-row items-center text-2xl uppercase md:flex lg:text-[50px]">
+            <h2
+              className="hidden flex-row items-center uppercase md:flex"
+              style={{ fontSize: "calc(2vw + 0.8em)" }}
+            >
               and she still has a monetized
               <span>
                 <img
@@ -107,29 +113,61 @@ export default function Home() {
 
           <div className="flex w-full flex-col items-center justify-center align-middle">
             <h3 className="grid h-full grid-cols-4 items-center gap-4 text-3xl uppercase lg:gap-8">
-              <div className="flex w-full flex-col items-center space-y-10">
-                <span className="text-ellipsis text-5xl lg:text-[120px]">
+              <div className="flex w-full flex-col items-center space-y-20">
+                <span
+                  className="text-ellipsis"
+                  style={{ fontSize: "calc(6vw + 0.8em)" }}
+                >
                   {timeSince.days}
                 </span>
-                <div className="text-lg text-red-600 lg:text-3xl">Days</div>
+                <div
+                  className="text-lg text-red-600"
+                  style={{ fontSize: "calc(1vw + 0.8em)" }}
+                >
+                  Days
+                </div>
               </div>
-              <div className="flex w-full flex-col items-center space-y-10">
-                <span className="text-ellipsis text-5xl lg:text-[120px]">
+              <div className="flex w-full flex-col items-center space-y-20">
+                <span
+                  className="text-ellipsis"
+                  style={{ fontSize: "calc(6vw + 0.8em)" }}
+                >
                   {timeSince.hours}
                 </span>
-                <div className="text-lg text-red-600 lg:text-3xl">Hours</div>
+                <div
+                  className=" text-red-600"
+                  style={{ fontSize: "calc(1vw + 0.8em)" }}
+                >
+                  Hours
+                </div>
               </div>
-              <div className="flex w-full flex-col items-center space-y-10">
-                <span className="text-ellipsis text-5xl lg:text-[120px]">
+              <div className="flex w-full flex-col items-center space-y-20">
+                <span
+                  className="text-ellipsis"
+                  style={{ fontSize: "calc(6vw + 0.8em)" }}
+                >
                   {timeSince.minutes}
                 </span>
-                <div className="text-lg text-red-600 lg:text-3xl">Minutes</div>
+                <div
+                  className=" text-red-600"
+                  style={{ fontSize: "calc(1vw + 0.8em)" }}
+                >
+                  Minutes
+                </div>
               </div>
-              <div className="flex w-full flex-col items-center space-y-10">
-                <span className="text-ellipsis text-5xl lg:text-[120px]">
+              <div className="flex w-full flex-col items-center space-y-20">
+                <span
+                  className="text-ellipsis"
+                  style={{ fontSize: "calc(6vw + 0.8em)" }}
+                >
                   {timeSince.seconds}
                 </span>
-                <div className="text-lg text-red-600 lg:text-3xl">Seconds</div>
+                <div
+                  className=" text-red-600"
+                  style={{ fontSize: "calc(1vw + 0.8em)" }}
+                >
+                  Seconds
+                </div>
               </div>
             </h3>
           </div>
