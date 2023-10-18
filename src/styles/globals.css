@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  color: white;
+  background-color: black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  overflow: hidden;
+}
+
+.custom-cursor {
+  cursor:
+    url("/head.png") 16 16,
+    auto;
+}
+
+.text-clamp-120 {
+  font-size: clamp(4rem, 6vw, 130px);
+}
+
+.text-clamp-60 {
+  font-size: clamp(3rem, 4vw, 60px);
+}
+
+.text-clamp-40 {
+  font-size: clamp(2rem, 3vw, 40px);
+}
+
+.cut-off {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
